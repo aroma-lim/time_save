@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How Much Time Do You Save?</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Pretendard', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+      height: 100vh;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #222;
+      font-size: 24px;
+      /* Adjust to desired size, e.g., 24px */
+      line-height: 1.4;
+      /* Adjust line height for spacing */
+      margin-bottom: 1rem;
+      /* Space below the title */
+    }
+
+    .highlight {
+      color: #e17055;
+      font-weight: bold;
+    }
+
+    .emphasis {
+      color: #d63031;
+      font-weight: bold;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ffdd59;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .equation {
+      font-family: 'Pretendard', sans-serif;
+      background-color: #fff8e1;
+      color: #d63031;
+      border: 1px solid #ffdd59;
+      padding: 15px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .equation p {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .normal-text {
+      font-weight: normal;
+      /* Regular weight */
+      font-size: 16px;
+      /* Adjust size as needed */
+    }
+
+    .cost-text {
+      font-weight: bold;
+      /* Emphasize with bold */
+      font-size: 18px;
+      /* Slightly larger size */
+      color: #333;
+      /* Change color as desired */
+    }
+
+    .note-text {
+      font-style: italic;
+      font-weight: bold;
+      /* Italic style for note */
+      font-size: 16px;
+      /* Same size as normal text */
+      color: #555;
+      /* Lighter color for note */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container" id="content-en">
+    <h1>How Much Time Saved?</h1>
+    <p>Our app saves users <span class="highlight">1 to 30 minutes</span> every day. Keeping this service going,
+      however, comes with a cost.</p>
+    <p>Development for new features costs <span class="highlight">$2,500 per month</span>, while just keeping the app
+      running requires <span class="highlight">$10 per month</span> – that’s only <span class="emphasis">2 cups of
+        coffee <i class="fas fa-coffee"></i><i class="fas fa-coffee"></i></span>.</p>
+    <p>We need <span class="emphasis">24 cups by March 2025 <i class="fas fa-coffee"></i><i class="fas fa-coffee"></i><i
+          class="fas fa-coffee"></i></span> to keep the app online. Without this support, the service may need to
+      close😞
+    </p>
+    <p>We want to continue saving your time. Please support us with a cup of coffee!</p>
+    <a href="https://www.buymeacoffee.com/yourusername" target="_blank" class="btn">Buy Me a Coffee</a>
+
+    <div class="equation">
+      <p class="normal-text">No matter how much time you save...</p>
+      <p class="cost-text">Keeping the app going = <span class="highlight"><i class="fas fa-coffee"></i> + <i
+            class="fas fa-coffee"></i></span></p>
+      <p class="note-text">(just 2 cups of coffee)</p>
+    </div>
+  </div>
+
+  <div class="container" id="content-ko" style="display: none;">
+    <h1>얼마나 절약하셨나요?</h1>
+    <p>이 앱은 하루 <span class="highlight">1분에서 30분</span> 정도 절약시켜줍니다. 하지만 모든 앱은 유지 비용이 들죠.</p>
+    <p>새로운 기능 개발에는 매달 약 <span class="highlight">$2,500</span>가 들고, 단순히 앱을 유지하는 데엔 <span class="highlight">매달 $10</span>이
+      필요해요 – 딱 <span class="emphasis">커피 2잔 <i class="fas fa-coffee"></i><i class="fas fa-coffee"></i></span>이면 가능해요!
+    </p>
+    <p>사실.. 2025년 3월까지 <span class="emphasis">커피 24잔 <i class="fas fa-coffee"></i><i class="fas fa-coffee"></i><i
+          class="fas fa-coffee"></i></span>이 필요해요. 만약 채워지지 않으면 앱 서비스를 종료하게 될수도 있어요😞</p>
+    <p>앞으로도 여러분의 시간을 절약시켜드리고 싶어요. 커피 한 잔으로 저희를 응원해 주세요!</p>
+    <a href="https://www.buymeacoffee.com/yourusername" target="_blank" class="btn">커피 한 잔 응원하기</a>
+
+    <div class="equation">
+      <p class="normal-text">절약하는 시간이 얼마나 되든...</p>
+      <p class="cost-text">앱을 유지하기 위한 비용 = <span class="highlight"><i class="fas fa-coffee"></i> + <i
+            class="fas fa-coffee"></i></span></p>
+      <p class="note-text">(딱 커피 2잔)</p>
+    </div>
+
+  </div>
+
+  <script>
+    const userLang = navigator.language || navigator.userLanguage;
+    console.log('userLang', userLang);
+    if (userLang.startsWith('ko')) {
+      document.getElementById('content-en').style.display = 'none';
+      document.getElementById('content-ko').style.display = 'block';
+    } else {
+      document.getElementById('content-en').style.display = 'block';
+      document.getElementById('content-ko').style.display = 'none';
+    }
+  </script>
+
+</body>
+
+</html>
